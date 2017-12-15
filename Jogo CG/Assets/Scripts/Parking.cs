@@ -5,7 +5,8 @@ using UnityEngine;
 public class Parking : MonoBehaviour {
 
 	private Bounds tbounds;
-	private bool parked = false;
+	private bool inside = false;
+	private bool wait = false;
 
 	// Use this for initialization
 	void Start () {
@@ -26,16 +27,13 @@ public class Parking : MonoBehaviour {
 			Bounds obounds = other.gameObject.GetComponent<Collider> ().bounds;
 
 			if (tbounds.Contains (obounds.max) &
-			    tbounds.Contains (obounds.min) & !parked) {
-				Debug.Log ("Dentro");
-				StartCoroutine (Wait ());
+			    tbounds.Contains (obounds.min)) {
+				GameObject.Find ("UI").GetComponent<GameController> ().Win ();
 			}
 		}
 	}
 
-	IEnumerator Wait(){
-		yield return new WaitForSeconds (1.5f);
-		Debug.Log ("Estacionou");
-		parked = true;
-	}
+
+
+
 }

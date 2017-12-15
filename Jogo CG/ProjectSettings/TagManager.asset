@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Marking
   - theobjectToIgnore
+  - CarAI
+  - Spawn
   layers:
   - Default
   - TransparentFX
