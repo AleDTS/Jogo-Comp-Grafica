@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 446238}
   - component: {fileID: 3384600}
   - component: {fileID: 2310778}
+  - component: {fileID: 65704213519402786}
   m_Layer: 0
   m_Name: fonar
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193404}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.00000011518241, y: 0.70722896, z: 0.7069846, w: -0.00000011522223}
+  m_LocalPosition: {x: 1.314064, y: -1.0451562, z: -15.564217}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193404}
   m_IsPrefabParent: 1
+--- !u!65 &65704213519402786
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0013242647, y: 0.0013327786, z: 0.0733111}
+  m_Center: {x: -0.000017843096, y: 0.0000120214745, z: 0.036655348}
